@@ -3,30 +3,35 @@ body{
    
 }
 
-
+:root{
+    --rosa:#ffadcf;
+}
 *{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
-/*TEXTO LADO DIREITO DA IMAGEM NO TOPO*/
-.titulo{
-    margin: auto;
-    padding-left: 70px;
-    color: #c6299c;
-}
 
-.titulo { 
+.margem{
+    margin: 0 auto;
+    width: 85%;
+}
+/*TEXTO LADO DIREITO DA IMAGEM NO TOPO*/
+.cabecalho__ajuste{
     display: flex;
-    align-items:center;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    color: #c6299c;
+    width: 100%;
 }
 /*MENU*/
 .menu ul{
+    display: flex;
     background-color: #c6299c;
+    justify-content: center;
     list-style: none;
-    padding-left: 420px;
-    margin-left: 100px;
     margin-right: 100px;
+    width: 100%;
 }
-
 .menu ul li{
     display: inline;
 }
@@ -57,17 +62,15 @@ color: coral;
         display:block;
         width:150px;
         }
-
         /*PRIMEIRO CAROUSEL*/
 
-.carousel_1{
-    margin-left: 99px;
-    margin-right: 99px;
+.lista{
+    display: flex;
+    margin: 0 auto;
+    padding: 8px 0;
+    width: 50%;
 }
-.carousel-itemx{
-    position: relative;
-}
-.legenda{
+.legenda {
     position: absolute;
     left: 10px;
     bottom: 30px;
@@ -86,91 +89,45 @@ color: coral;
 .atividades {
     color:white;
     background-color: #f0cb00;
-    width: 200px;
-    display: inline-block;
-    margin-top: 1px;
-    margin-right: 30px;
-    margin-left: 99px;
-    margin-bottom: 15px;
+    padding: 8px 0;
+}
+
+
+
+.lista li{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 10px;
+    width: 100%;
     padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 10PX;
 }
-
-
-.carousel-item{
-    max-width: 150px;
-    margin-left: 25px;
-}
-
 .frutas{
-background-color: rgb(255, 173, 207);
-display: inline-block;
-color: white;
-    margin-left: 10px;
-    margin-bottom: 15px;
-    margin-top: 20px;
-    margin-right: 30px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
+    background-color: rgb(255, 173, 207);
+    color: white;
 }
  /*Caixa alimentos e objetos*/
-.frutas a:hover{
-    color: coral;
-}
-.frutas img{
- width: 150px;
-height: 150px;
-}
-
-    .frutas a {
-        list-style: none;
-        text-decoration: none;
-        color: #fff;
-    }
 
 .objetos{
     background-color: rgb(255, 173, 207);
-    display: inline-block;
-    position: relative;
-    color: white;
-    margin-right: 30px;
-    padding-left: 10px;
-    padding-right: 30px;
-    padding-bottom: 10px;
 }
-.objetos img{
-
-    width: 150px;
-    height: 150px;
-    margin-left: 8px;
-
-}
-
 .objetos a {
     list-style: none;
     text-decoration: none;
     color: #fff;
     margin-left: 9px;
 }
-
 .objetos a:hover{
     color: coral;
 }
 /*CAIXA ANIMAIS */
 .animais{
     background-color: rgb(255, 173, 207);
-    display: inline-block;
-    position: relative;
     color: white;
-    padding-left: 10px;
-    padding-right: 30px;
-    padding-bottom: 10px;
 }
 .animais img{
-
-    width: 150px;
+    max-width: 150px;
     height: 150px;
     margin-left: 8px;
 
@@ -182,32 +139,46 @@ height: 150px;
     color: #fff;
     margin-left: 9px;
 }
-
+.alimentos{
+    background: var(--rosa);
+   
+}
+.alimentos a{
+    color: #fff;
+    text-decoration: none;
+}
+.alimentos a:hover{
+    color: coral;
+}
 .animais a:hover{
     color: coral;
 }
 /*RODAPÉ*/
 .rodape{
-    background-color: rgb(55, 189, 191);
-    justify-content: center ;
     align-items: center;
-    display: flex;
-    height: 300px;
-    width: 100%;
+    background-color: rgb(55, 189, 191);
     color: antiquewhite;
+    display: flex;
+    flex-direction: column;
     font-style: lighter;
     font-weight: lighter;
     font-size: 12px;
-    padding-left: 200px;
-    
+    width: 100%;
     
 }
+.rodape__texto{
+    font-size: 16px;
+    border-bottom: solid 2px;
+    padding: 8px 0;
+}
 .menurodape{
-    display: block;
-    list-style: "| ";
+    display: flex;
+    list-style: "|";
     font-size: 14px;
-    padding-top: 120px;
     
+}
+.menurodape__item{
+    margin: 0 8px;
 }
 .inforodape{
    padding-left: 300px;
